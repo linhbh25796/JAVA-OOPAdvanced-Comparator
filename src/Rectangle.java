@@ -1,6 +1,10 @@
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     private int a;
     private int b;
+
+    public Rectangle() {
+
+    }
 
     public Rectangle(int a, int b) {
         this.a = a;
@@ -29,14 +33,14 @@ public class Rectangle extends Shape{
         this.b = b;
     }
 
-    public int getArea(){
-        return this.a*this.b;
+    public int getArea() {
+        return this.a * this.b;
     }
 
     @Override
     public String toString() {
-        return "A Circle with a ="
-                + getA() + "b= " +getB()
+        return "A Rectangle with a = "
+                + getA() + " b = " + getB() +" Area: "+getArea()
                 + ", which is a subclass of "
                 + super.toString();
     }

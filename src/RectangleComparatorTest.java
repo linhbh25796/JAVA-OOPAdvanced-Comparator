@@ -8,16 +8,16 @@ public class RectangleComparatorTest {
         rect[2] = new Rectangle("white",true,100,200);
 
         System.out.println("Pre-sorted:");
-        for (Rectangle rects : rect) {
-            System.out.println(rect);
+        for (Rectangle rectangle : rect) {
+            System.out.println(rectangle);
         }
 
         RectangleComparator rectComparator = new RectangleComparator();
         Arrays.sort(rect, rectComparator);
 
         System.out.println("After-sorted:");
-        for (Rectangle rects : rect) {
-            System.out.println(rect);
+        for (Rectangle rectangle : rect) {
+            System.out.println(rectangle);
         }
     }
 }
